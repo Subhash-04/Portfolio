@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhash Portfolio | Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="preloader">
+    <div id="preloader-text"></div>
+    <p class="loading-text">Loading...</p>
+</div>
+
+    <!-- 3D Background Containers - One for each theme -->
+    <div id="scene-container"></div>
+    <div id="scene-container-light"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    Subhash<span style="color: var(--accent-pink);">Portfolio</span>
+                </a>
+                <div style="display: flex; align-items: center;">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="themeToggle" title="Toggle theme"></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Creative <span class="highlight">Solutions</span><br>for Digital Innovation</h1>
+                <p class="hero-subtitle">Crafting exceptional digital experiences through AI-powered development, vibe coding, and cutting-edge design techniques that redefine possibilities.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <p class="section-subtitle">Passionate about blending creativity with technical excellence to solve complex problems and create memorable digital experiences.</p>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I'm a multidisciplinary designer and developer specializing in crafting immersive digital solutions that combine cutting-edge technology with elegant design. With expertise in 3D visualization, interactive applications, and front-end development, I create experiences that engage users and drive results.</p>
+                    <p>My approach focuses on the intersection of aesthetics and functionality, ensuring that every project not only looks impressive but also delivers exceptional user experience and performance. I believe in pushing creative boundaries while maintaining a strong foundation in technical best practices.</p>
+                    <p>As a dedicated freelancer, I leverage cutting-edge AI tools to build applications with extraordinary efficiency and unparalleled quality. My expertise in vibe coding enables me to deliver projects with exceptional performance and sophisticated designs that profoundly resonate with users and exceed expectations.</p>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-handshake"></i>
+                        Let's Work Together
+                    </a>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="assets\profile.jpg" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <p class="section-subtitle">Leveraging a diverse skill set to create comprehensive digital solutions from concept to execution.</p>
+            <div class="skills-container">
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3 class="skill-title">3D Visualization</h3>
+                        </div>
+                        <p class="skill-desc">Creating immersive 3D experiences and visualizations using Three.js, WebGL, and modern animation techniques.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="92"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="skill-title">Frontend Development</h3>
+                        </div>
+                        <p class="skill-desc">Building responsive, interactive interfaces with modern frameworks and bleeding-edge technologies.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="95"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3 class="skill-title">UI/UX Design</h3>
+                        </div>
+                        <p class="skill-desc">Designing intuitive, visually stunning interfaces that balance aesthetics with usability.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="88"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="skill-title">Backend Development</h3>
+                        </div>
+                        <p class="skill-desc">Building robust server systems, APIs, and database architectures to power complex applications.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="85"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <h3 class="skill-title">Motion Design</h3>
+                        </div>
+                        <p class="skill-desc">Creating fluid animations and micro-interactions that enhance user experience and engagement.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="90"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="card-3d-content">
+                        <div class="skill-card-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="skill-title">Responsive Design</h3>
+                        </div>
+                        <p class="skill-desc">Ensuring flawless experiences across all devices with adaptive, responsive layouts.</p>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-width="94"></div>
+                        </div>
+                        <div class="card-3d-layer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle">A selection of my recent work showcasing creative solutions and technical excellence.</p>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <a href="https://dharani-printing-services-subhashmandalap.replit.app/" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\Dharani.png" alt="Dharani Printing Services">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Full-Stack Web Application</span>
+                                <h3 class="project-title">Dharani Printing Services</h3>
+                                <p class="project-desc">End-to-end printing service management platform with admin dashboard for service creation, order tracking, and seamless payment processing for customers.</p>
+                                <div class="project-links">
+                                    <a href="https://dharani-printing-services-subhashmandalap.replit.app/" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/Dharani-Printing-Services" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <a href="https://payuone.expo.app" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\PayUOne.png" alt="PayuOne App">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Full-Stack Web Application</span>
+                                <h3 class="project-title">PayuOne</h3>
+                                <p class="project-desc">Sophisticated data management system with dynamic column creation, financial tracking capabilities, and advanced filtering by date ranges that automatically calculates monthly and overall income totals.</p>
+                                <div class="project-links">
+                                    <a href="https://payuone.expo.app" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/payuone" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <a href="https://subhash-04.github.io/acm_vvit_landingpage-by-Subhash/" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\acmvvit.png" alt="ACM VVIT">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Interactive Landing Page</span>
+                                <h3 class="project-title">ACM VVIT</h3>
+                                <p class="project-desc">Futuristic landing page for ACM student chapter featuring a stunning 3D networking-themed background, modern design aesthetics, and smooth interactive elements that create an immersive visitor experience.</p>
+                                <div class="project-links">
+                                    <a href="https://subhash-04.github.io/acm_vvit_landingpage-by-Subhash/" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/acm_vvit_landingpage-by-Subhash" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card fade-in">
+                    <a href="https://earnest-semifreddo-abdb5c.netlify.app/" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\QR.png" alt="QR Generator">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Frontend Application</span>
+                                <h3 class="project-title">QR Generator</h3>
+                                <p class="project-desc">Advanced QR code generator with custom styling options, logo integration, and sharing capabilities for seamless digital connections.</p>
+                                <div class="project-links">
+                                    <a href="https://earnest-semifreddo-abdb5c.netlify.app/" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/QR-generator" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card fade-in">
+                    <a href="https://subhash-04.github.io/Robo-Rift/" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\RoboRift.png" alt="Robo Rift">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Interactive Game</span>
+                                <h3 class="project-title">Robo Rift</h3>
+                                <p class="project-desc">AI-themed cybersecurity challenge where players assume the role of an agent defending a robot from hackers across 10 increasingly difficult levels with dynamic visual feedback.</p>
+                                <div class="project-links">
+                                    <a href="https://subhash-04.github.io/Robo-Rift/" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/Robo-Rift" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card fade-in">
+                    <a href="https://subhash-04.github.io/Echo-Trap/" target="_blank" class="project-card-link">
+                        <div class="project-thumb">
+                            <img src="assets\EchoTrap.png" alt="Echo Trap">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="card-3d-content">
+                                <span class="project-category">Interactive Game</span>
+                                <h3 class="project-title">Echo Trap</h3>
+                                <p class="project-desc">Sequel to Robo Rift where players must escape a neural prison by solving puzzles across 5 challenging levels, featuring AI-generated cinematic storytelling and immersive visuals.</p>
+                                <div class="project-links">
+                                    <a href="https://subhash-04.github.io/Echo-Trap/" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/subhash-04/Echo-Trap" target="_blank" class="project-link" onclick="window.open(this.href, '_blank'); return false;">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="card-3d-layer"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle">Interested in working together? Let's discuss your project and create something amazing.</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>hello@subhashportfolio.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91 (123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Guntur, Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="ai-powered-workflow fade-in">
+                        <h3 class="workflow-title"><i class="fas fa-brain"></i> AI-Powered Development</h3>
+                        <div class="workflow-stages">
+                            <div class="workflow-stage">
+                                <div class="workflow-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="workflow-info">
+                                    <h4>Ideation</h4>
+                                    <p>Transform concepts into concrete plans</p>
+                                </div>
+                            </div>
+                            <div class="workflow-stage">
+                                <div class="workflow-icon">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div class="workflow-info">
+                                    <h4>Creation</h4>
+                                    <p>AI-assisted rapid development</p>
+                                </div>
+                            </div>
+                            <div class="workflow-stage">
+                                <div class="workflow-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="workflow-info">
+                                    <h4>Deployment</h4>
+                                    <p>Seamless launch and optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm" action="https://formspree.io/f/mpwdnged" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Your Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Subhash<span style="color: var(--accent-pink);">Portfolio</span></a>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="footer-newsletter">
+                    <div class="newsletter-content">
+                        <div class="newsletter-text">
+                            <span class="pulse-dot"></span>
+                            <p>Available for new projects</p>
+                        </div>
+                        <a href="#contact" class="btn btn-sm btn-primary">
+                            <i class="fas fa-rocket"></i> 
+                            <span>Start a Project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Subhash Portfolio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Required Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    
+    <!-- Main script -->
+    <script src="script.js"></script>
+</body>
+</html>
